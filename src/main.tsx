@@ -2,14 +2,14 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import MantineUIProvider from './providers/MantineUIProvider';
 import MainLayout from './layout/MainLayout';
-import WelcomePage from './pages/WelcomePage';
 import "./styles/global.css"
+import CategoryPage from './pages/CategoryPage';
 
 createRoot(document.getElementById('root')!).render(
 <StrictMode>
   <MantineUIProvider>
     <MainLayout>
-      <WelcomePage/>
+      <CategoryPage/>
     </MainLayout>
   </MantineUIProvider>
 </StrictMode>
