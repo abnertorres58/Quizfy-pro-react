@@ -13,6 +13,7 @@ const CategoryItem = ({icon, title, onClick, active}: CategoryItemProps) => {
     const {  hovered, ref } = useHover();
   return (
     <Flex
+    onClick={onClick}
     ref={ref}
     direction={"column"}
     align={"center"}
